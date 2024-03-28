@@ -1,0 +1,98 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+
+/* Set body styles */
+body {
+    font-family: "Emilys Candy", serif; /* Set font family */
+    font-weight: 400; /* Set font weight */
+    font-style: normal; /* Set font style */
+    text-align: center; /* Align text horizontally at the center */
+    background-color: #4E524E; /* Set background color */
+}
+
+/* Set flex container styles */
+.flex {
+    display: flex; /* Enable flex layout */
+    gap: 40px; /* Add space between flex items */
+    justify-content: center; /* Align items horizontally at the center */
+}
+
+/* Set figcaption styles */
+figcaption {
+    text-align: center; /* Align text horizontally at the center */
+    margin-top: 30px; /* Add top margin */
+}
+
+/* Set span styles */
+span {
+    font-size: 24px; /* Set font size */
+    display: block; /* Display as block element */
+}
+
+/* Set link styles */
+a {
+    color: rgb(250, 233, 1); /* Set link color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Set link hover styles */
+a:hover {
+    color: rgb(149, 172, 17); /* Change link color on hover */
+}
+
+/* Set h1 styles */
+h1 {
+    font-size: 40px; /* Set font size */
+    color: #eaeacd; /* Set text color */
+    text-align: center; /* Align text horizontally at the center */
+}
+
+/* Set img styles */
+img {
+    width: 100%; /* Set image width to fill container */
+    display: flex; /* Enable flex layout */
+    justify-content: center; /* Align items horizontally at the center */
+    align-items: center; /* Align items vertically at the center */
+    margin: 0 10px; /* Adjust spacing between images */
+    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
+}
+
+/* Remove filters for images */
+.left, .mid, .right {
+    filter: none; /* Remove image filters */
+}
+
+/* Remove animations for images */
+#left, #mid, #right {
+    opacity: 1; /* Set initial opacity to fully visible */
+    animation: none; /* Remove animation */
+}
+
+/* Set hr styles */
+hr {
+    border: 1px solid darkolivegreen; /* Set border style */
+    width: 500px; /* Set width */
+    margin-top: 100px; /* Add top margin */
+    margin-bottom: 30px; /* Add bottom margin */
+}
+
+/* Set footer styles */
+footer {
+    margin-bottom: 30px; /* Add bottom margin */
+}
+
+/* Add fade-in animation to images */
+img {
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fadein 1s ease forwards; /* Apply fade-in animation */
+}
+
+/* Define fade-in animation */
+@keyframes fadein {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+        opacity: 1; /* End with opacity 1 */
+    }
+}
