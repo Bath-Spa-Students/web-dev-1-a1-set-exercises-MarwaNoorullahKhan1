@@ -1,0 +1,370 @@
+.gradient-text {
+ 
+    /* Create the gradient. */
+     background-image: linear-gradient(
+          45deg,
+          #6a040f 16.666%, 
+          #000000 16.666%, 
+          #6a040f 33.333%, 
+          #000000 33.333%, 
+          #6a040f 50%, 
+          #000000 50%, 
+          #6a040f 66.666%, 
+          #000000 66.666%, 
+          #6a040f 83.333%, 
+          #000000 83.333%);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    
+    /* Animate the text when loading the element. */
+      /* This animates it on page load and when hovering out. */
+      animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+  
+  }
+  
+  .gradient-text:hover{
+      animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+  }
+  
+  
+  /* Move the background and make it smaller. */
+  /* Animation shown when entering the page and after the hover animation. */
+  @keyframes rainbow-text-simple-animation-rev {
+      0% {
+          background-size: 650%;
+      }
+      40% {
+          background-size: 650%;
+      }
+      100% {
+          background-size: 100%;
+      }
+  }
+  
+  /* Move the background and make it larger. */
+  /* Animation shown when hovering over the text. */
+  @keyframes rainbow-text-simple-animation {
+      0% {
+          background-size: 100%;
+      }
+      80% {
+          background-size: 650%;
+      }
+      100% {
+          background-size: 650%;
+      }
+  }
+    
+  
+  
+  /* Style the rest of the page. */
+  body {
+    background-color: #000000;
+  }
+  
+  header {
+    margin-top: 1em;
+    margin-top: calc(50vh - 3em);
+  }
+  
+  h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: normal;
+    font-size: 6em;
+    text-align: center;
+    margin-bottom: 0;
+    margin-bottom: -0.25em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    width: 605px;
+   
+  }
+ 
+  #button1 {
+    color: rgb(88, 20, 20);
+    
+    padding: 10px;
+    text-align: center;
+    margin: 5px 5px;
+    font-size: 1.2rem;
+    background-color: white;
+    border-radius: 1rem; 
+    border: 2px solid white;
+    
+    
+  }
+  #button1:hover {
+    background-color: black;
+    border-color: black;
+    color: white;
+    transition: 1.2s;
+  }
+  button {
+    color: white;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px 5px;
+    font-size: 1.2rem;
+    background: transparent;
+    border-radius: 1rem; 
+    border: 2px solid white;
+    margin-bottom: 60px;
+    
+    
+  }
+  button:hover {
+    background-color: white;
+    color: #6a040f;
+    transition: 1.2s;
+    
+  }
+
+/* Center-align and style the "Storyline" section */
+.Storyline {
+    color: white; /* Set text color to white */
+    text-align: center; /* Center-align text */
+    max-width: 800px; /* Set maximum width for better readability */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px; /* Add padding for spacing */
+    font-size: 30px;
+
+}
+.Storyline p{
+    margin-top: 100px;
+
+}
+
+
+.titlepage p{
+    margin-top: 500px;
+}
+
+
+/* Center-align and style the "titlepage" section */
+.titlepage {
+    text-align: center; /* Center-align content */
+    color: white; /* Set text color to white */
+    font-size: 30px;
+    
+}
+#c.page {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.Castt {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.Castt h1 {
+    text-align: center;
+    font-size: 36px; /* Increased font size */
+    font-weight: bold;
+    color:#6a040f; /* Red color */
+    color: white;
+}
+
+.Castt table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.Castt th,
+.Castt td {
+    padding: 15px; /* Increased padding */
+    border: 1px solid #ffffff;
+    text-align: left;
+    font-size: 30px;
+    color: white;
+}
+
+.Castt th {
+    background-color: #6a040f; /* Light red background */
+    font-size: 30px;
+    color: white;
+}
+
+.Castt tr:nth-child(even) {
+    background-color:#6a040f; /* Light red background */
+    font-size: 30px;
+    color: white;
+}
+
+/* Creative team styling */
+.crew {
+    margin-top: 20px;
+    text-align: center; /* Center align the content */
+    font-size: 30px;
+}
+
+.director,
+.writers {
+    margin-bottom: 10px;
+    text-align: left; /* Align text to the left within the centered container */
+    font-size: 30px;
+}
+
+.director h4,
+.writers h4 {
+    color: white; /* White color for heading */
+    font-size: 30px; /* Increase font size */
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.director p,
+.writers p {
+    font-size: 30px; /* Increase font size for paragraph */
+    margin: 0;
+    color: white; /* White color for paragraph */
+    text-align: center;
+}
+
+.writers p {
+    margin-left: 20px; /* Indent for writer's names */
+    font-size: 30px;
+    text-align: center;
+
+}
+
+/* Separator line */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px auto; /* Center the separator line */
+    width: 80%; /* Adjust width of the line */
+}
+/* Reviews Section Styling */
+#r.page {
+    background: linear-gradient(to bottom, red, black);
+    color: white;
+    text-align: center;
+    padding: 20px; /* Added padding to the section */
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review {
+    background-color: #6a040f; /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    width: 300px; /* Set width for the review boxes */
+    text-align: center;
+    color: white;
+}
+
+.review h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+.review .contviews {
+    font-size: 20px;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+}
+
+.review p {
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Quotes Section Styling */
+.quotes {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.quotes h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white; /* Set the heading color to white */
+}
+
+.quote {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.quote p {
+    font-size: 24px;
+    color: white;
+}
+
+/* Add space between quote boxes */
+.quote + .quote {
+    margin-top: 20px;
+}
+
+/* Footer Styling */
+.foot {
+    background-color: #6a040f; /* Dark background color */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center align text */
+    border-top: 2px solid #6a040f; /* Add top border */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.foot p {
+    color: white; /* Set text color to white */
+    font-size: 16px; /* Set font size */
+}
+
+.foot a {
+    color: #f9ca24; /* Set link color to a lighter color */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.foot a:hover {
+    color: white; /* Change link color to white on hover */
+    text-decoration: underline; /* Add underline on hover for links */
+}
+
+nav{
+    text-align: center;
+    color: white;
+    size: 40px;
+    font-size: 30px;
+
+
+}
+
+nav a{
+    color: white;
+    font-size: 30px;
+    color:#ffffff;
+    width: 80%;
+    padding: 13px;
+    text-decoration: none;
+    margin-top: 20px;
+ 
+}
