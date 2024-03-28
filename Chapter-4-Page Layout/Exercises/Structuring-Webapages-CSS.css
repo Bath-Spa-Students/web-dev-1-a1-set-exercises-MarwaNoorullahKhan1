@@ -1,0 +1,72 @@
+body {
+    font-family:  Arial, Helvetica, sans-serif; /*Arial font*/
+    font-size: 20px; /* Decrease font size */
+    margin: 0; /* Remove default margin */
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; /* Decrease font size */
+    background-color: #8C15E9; /* Change background color */
+    color: white; /* Change text color to white */
+    text-align: center; /* Center align text */
+    padding: 15px; /* Increase padding */
+}
+
+header {
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 28px; /* Increase font size */
+    background-color: #17072b; /* Change background color */
+    color: #fff; /* Change text color */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Increase padding */
+    
+}
+
+header a {
+    color: #fff; /* Change link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 24px; /* Decrease font size */
+    font-weight: bold; /* Add bold font weight */
+    margin: 0 15px; /* Add margin */
+    
+}
+
+.content {
+    display: flex; /* Flexbox layout */
+    justify-content: space-around; /* Space evenly */
+
+}
+
+.welcome {
+    width: 45%; /* Decrease width */
+    padding: 20px; /* Increase padding */
+    
+    
+}
+
+.welcome img {
+    width: 110%; /* Set image width to 100% */
+    margin-top: 20px; /* Increase top margin */
+}
+
+.line-up {
+    background-color: #172d67; /* Change background color */
+    color: #fff; /* Change text color */
+    padding: 20px; /* Increase padding */
+    margin: 20px 0; /* Increase margin */
+    width: 40%; /* Decrease width */
+}
+
+.line-up ul {
+    line-height: 40px; /* Decrease line height */
+}
+
+.line-up img {
+    width: 45%; /* Decrease image width */
+    margin-top: 20px; /* Increase top margin */
+}
+
+h1, h2 {
+    text-decoration: underline; /* Adds a line under the text */
+}
