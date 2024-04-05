@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap'); /*'Comic Neue' font*/
+
+body {
+    background-color: #000000;
+    text-align: center;
+    color: white;
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+
+a {
+    color: darkorange;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* No underline, orange link */
+a:hover {
+    color: darkred;
+}
+
+/* Video styling */
+video {
+    width: 70%; /*  width  */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make the video a block element */
+    margin: 0 auto; /* Center the video horizontally */
+    border-radius: 10px; /* Rounded corners for the border */
+    box-shadow: 0 0 10px rgba(252, 252, 2, 0.7); /* Glowing border effect with RGBA color */
+    animation: glow 2s infinite alternate; /* Animation for glowing effect */
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px rgba(252, 252, 2, 0.7); /* Initial shadow */
+    }
+    to {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.5); /* Final shadow */
+    }
+}
