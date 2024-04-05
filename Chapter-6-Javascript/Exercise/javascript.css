@@ -1,0 +1,99 @@
+/* style.css */
+
+body {
+    background-image: url('gas\ station.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover;
+    background-blur: 5px; /* Adjust the blur strength as needed */
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0 0 10px;
+    color: orange;
+}
+
+hr {
+    width: 40%;
+    margin: 0 auto 30px;
+    border: 1px solid #ea8100;
+}
+
+input {
+    font-size: 22px;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 5px 0 5px 20px;
+}
+
+input:focus {
+    box-shadow: 0 0 10px orange;
+}
+
+button {
+    font-family: Tahoma, sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+    width: 180px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.547); /* Semi-transparent background */
+    color: aliceblue;
+}
+
+button:hover {
+    color: darkorange;
+    box-shadow: 0 0 10px orange;
+}
+
+.calc {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    width: 450px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    border: 5px solid #ea8100;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.input_cost {
+    display: flex;
+    justify-content: center;
+}
+
+.input_cost div {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+.input p {
+    font-size: 30px;
+    margin: 10px 160px;
+    text-align: left;
+}
+
+.cost p {
+    font-size: 50px;
+    margin: 40px;
+}
+
+#cost {
+    text-decoration: underline;
+    text-shadow: 0 0 10px rgb(234, 255, 0);
+}
+
+footer {
+    position: absolute;
+    bottom: 30px;
+    width: 99%;
+}
